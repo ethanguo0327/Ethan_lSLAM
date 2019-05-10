@@ -1,0 +1,8 @@
+//
+// Created by ethan on 19-5-10.
+//
+
+#ifndef ETHAN_LSLAM_LOOP_DETECTOR_H
+#define ETHAN_LSLAM_LOOP_DETECTOR_H
+
+#endif //ETHAN_LSLAM_LOOP_DETECTOR_H
