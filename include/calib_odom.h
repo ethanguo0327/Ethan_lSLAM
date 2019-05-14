@@ -4,6 +4,6 @@
 
 #ifndef ETHAN_LSLAM_CALIB_ODOM_H
 #define ETHAN_LSLAM_CALIB_ODOM_H
-class ClibOdom()
+class ClibOdom
 {};
 #endif //ETHAN_LSLAM_CALIB_ODOM_H

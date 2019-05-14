@@ -3,3 +3,7 @@
 //
 
 #include "../include/grid_mapping.h"
+void myMapping::laserReceived(const sensor_msgs::LaserScan laserScan) {
+    std::cout<<"laser received "<<std::endl;
+    std::cout<<"laser sequence is: "<<laserScan.header.seq<<std::endl;
+}
