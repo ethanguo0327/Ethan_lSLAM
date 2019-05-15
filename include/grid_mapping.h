@@ -8,18 +8,20 @@
 #include <nav_msgs/GetMap.h>
 #include <sensor_msgs/LaserScan.h>
 #include <stdlib.h>
+#include "calib_odom.h"
 class myMapping
 {
 public :
-    myMapping(){
-    laserSub_=nodeHandler.subscribe("sick_scan",10,&myMapping::laserReceived,this);
-    mapPub_=nodeHandler.advertise<nav_msgs::OccupancyGrid>("laserMap",1,true);
-};
+    myMapping();
     void laserReceived(const sensor_msgs::LaserScan laserScan);
 private:
     ros::NodeHandle nodeHandler;
     ros::Subscriber laserSub_;
     ros::Publisher  mapPub_;
+
+    bool use_calib_odom_;//TODO:should be set by parameter
+    std::shared_ptr<CalibOdom> calib_odomPtr;
+
 };
 
 
